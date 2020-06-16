@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!--we will pick color from this image-->
+
+    <!--view - set picked color to this view-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:src="@drawable/color" />
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <!--set HEX, RGB value of picked color-->
+    <TextView
+        android:id="@+id/resultTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HEX: \nRGB: \nXYZ: \nxyz: "
+        android:textSize="18sp"
+        android:textColor="#000" />
+
+</LinearLayout>
